@@ -1,0 +1,292 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    color: #873d5b;
+}
+
+/* HEADER */
+header {
+    background-color: #f7a9c4;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MENU NAVIGASI */
+nav {
+    background-color: #ffe0eb;
+    text-align: center;
+    padding: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a83e68;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* BAGIAN KONTEN */
+section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* TOMBOL */
+button {
+    background-color: #ed85aa;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f7a9c4;
+    text-align: center;
+    color: white;
+    padding: 18px;
+}
+/* ===== FLUFF PINK FRUITY THEME ===== */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff5f8;
+    color: #8e4561;
+}
+
+header {
+    background: linear-gradient(135deg, #ffb6ce, #f78eae);
+    padding: 45px 20px;
+    border-radius: 0 0 35px 35px;
+}
+
+header h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 3px 3px #f5d2df;
+}
+
+header p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #ffe5ee;
+    border-radius: 30px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+nav a {
+    font-family: 'Fredoka', sans-serif;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ed6595;
+}
+
+section h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+    color: #d75d88;
+}
+
+button {
+    font-family: 'Fredoka', sans-serif;
+    background: #ed85aa;
+    box-shadow: 0 4px 0 #d96891;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #e66d99;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #f7a9c4;
+    font-family: 'Fredoka', sans-serif;
+}
+/* KATALOG PRODUK */
+
+.produk-section {
+    padding: 50px 7%;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.produk-card {
+    background: white;
+    padding: 15px;
+    border-radius: 22px;
+    box-shadow: 0 5px 15px rgba(220, 120, 160, 0.15);
+    transition: 0.3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-7px);
+}
+
+.produk-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.produk-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #d75d88;
+}
+
+.produk-card p {
+    color: #a65b78;
+}
+
+@media (max-width: 800px) {
+    .produk-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* POPUP PEMESANAN FLUFF */
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(60, 30, 45, 0.55);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup-box {
+    background: #fff0f6;
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    border: 3px solid #f5b6d0;
+}
+
+.popup-box h2 {
+    color: #d65b91;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.popup-box h3 {
+    color: #9e5274;
+    font-size: 21px;
+}
+
+.popup-box p {
+    color: #70465a;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.popup-box .harga-popup {
+    color: #d65b91;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.popup-box button {
+    background: #e985b0;
+    color: white;
+    border: none;
+    padding: 13px 35px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+/* ===== KERANJANG BELANJA FLUFF ===== */
+
+#keranjang {
+    background: #ffeaf2;
+    margin: 40px auto;
+    padding: 40px 20px;
+    border-radius: 30px;
+    width: 90%;
+}
+
+#keranjang h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #d75d88;
+    font-size: 32px;
+}
+
+#daftar-keranjang {
+    max-width: 550px;
+    margin: 25px auto;
+}
+
+.item-keranjang {
+    background: white;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(220, 120, 160, 0.12);
+}
+
+.item-keranjang p {
+    margin: 8px;
+    color: #98516e;
+}
+
+.item-keranjang button {
+    padding: 7px 16px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+#total-harga {
+    color: #d75d88;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    margin: 25px;
+}
+
+/* TOMBOL WHATSAPP */
+
+#keranjang button {
+    background: #25D366;
+    box-shadow: 0 4px 0 #1da851;
+    font-size: 17px;
+    padding: 14px 25px;
+}
+
+#keranjang button:hover {
+    background: #20bd5a;
+}

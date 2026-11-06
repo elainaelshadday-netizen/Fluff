@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fluff | Handmade Accessories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Fluff ♡</h1>
+        <p>Little Clips, Big Happiness</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to Fluff!</h2>
+
+        <p>
+            Temukan koleksi jepit rambut handmade
+            yang lucu, unik, dan terjangkau.
+        </p>
+
+        <button onclick="sapa()">Shop Now</button>
+    </section>
+
+    <!-- PRODUK -->
+   <section id="produk" class="produk-section">
+
+    <h2>Our Sweet Collection 🍓</h2>
+    <p>Pilih jepit rambut favoritmu!</p>
+
+    <div class="produk-container">
+
+    <div class="produk-card">
+        <img src="images/bunga-pink.jpg.jpeg" alt="Bunga Pink">
+        <h3>Bunga Pink</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Bunga Pink', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/Cherry-merah.jpg.jpeg" alt="Cherry Merah">
+        <h3>Cherry Merah</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Cherry Merah', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/anggur-ungu.jpg.jpeg" alt="Anggur Ungu">
+        <h3>Anggur Ungu</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Anggur Ungu', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/Bluve-love.jpg.jpeg" alt="Bluve Love">
+        <h3>Bluve Love</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Bluve Love', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/labu-mini.jpg.jpeg" alt="Labu Mini">
+        <h3>Labu Mini</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Labu Mini', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/pohon-natal.jpg.jpeg" alt="Pohon Natal">
+        <h3>Pohon Natal</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Pohon Natal', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/topi-santa.jpg.jpeg" alt="Topi Santa">
+        <h3>Topi Santa</h3>
+        <p>Rp5.000 / pcs</p>
+        <button onclick="tambahKeranjang('Topi Santa', 5000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/set-natal.jpg.jpeg" alt="Set Natal">
+        <h3>Set Natal</h3>
+        <p>Rp8.000 / 2 pcs</p>
+        <button onclick="tambahKeranjang('Set Natal', 8000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/Sweet-christmast.jpg.jpeg" alt="Sweet Christmast">
+        <h3>Sweet Christmast</h3>
+        <p>Rp8.000 / 2 pcs</p>
+        <button onclick="tambahKeranjang('Sweet Christmast', 8000)">Tambah</button>
+    </div>
+
+    <div class="produk-card">
+        <img src="images/Bunga-putih.jpg.jpeg" alt="Bunga Putih">
+        <h3>Bunga Putih</h3>
+        <p>Rp8.000 / 2 pcs</p>
+        <button onclick="tambahKeranjang('Bunga Putih', 8000)">Tambah</button>
+    </div>
+
+</div>
+</section>
+
+<!-- KERANJANG BELANJA -->
+<section id="keranjang">
+    <h2>🛒 Keranjang Fluff</h2>
+
+    <div id="daftar-keranjang">
+        <p>Belum ada produk yang dipilih.</p>
+    </div>
+
+    <h3 id="total-harga">Total: Rp0</h3>
+
+    <button onclick="checkoutWhatsApp()">
+        💗 Pesan via WhatsApp
+    </button>
+</section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Fluff</h2>
+
+        <p>
+            Fluff adalah toko handmade accessories
+            yang menghadirkan jepit rambut lucu dan unik.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us +62812 6263 5953</h2>
+        <p>Hubungi kami untuk melakukan pemesanan.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Fluff Handmade Accessories</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+   
+
+</body>
+</html>
